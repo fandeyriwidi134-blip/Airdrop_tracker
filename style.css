@@ -1,0 +1,16 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; background: #f4f7fc; color: #333; }
+.container { max-width: 600px; margin: 40px auto; padding: 20px; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+h1 { text-align: center; color: #2563eb; margin-bottom: 16px; }
+p { text-align: center; color: #6b7280; margin-bottom: 24px; }
+.input-section { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+input { flex: 1; min-width: 120px; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; }
+button { background: #2563eb; color: white; border: none; padding: 10px 16px; border-radius: 6px; cursor: pointer; font-weight: 600; }
+button:hover { background: #1d4ed8; }
+#daftar-airdrop { list-style: none; }
+#daftar-airdrop li { padding: 14px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; font-size: 14px; }
+#daftar-airdrop a { color: #2563eb; text-decoration: none; }
+#daftar-airdrop a:hover { text-decoration: underline; }
+.hapus { color: #ef4444; cursor: pointer; font-weight: bold; }
+.info { margin-top: 30px; font-size: 14px; color: #6b7280; }
+details summary { font-weight: 600; cursor: pointer; }
