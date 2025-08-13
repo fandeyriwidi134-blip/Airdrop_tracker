@@ -30,3 +30,67 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Airdrop Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 Airdrop Tracker</h1>
+    <p>Simpan dan pantau airdrop favorit Anda — tanpa modal!</p>
+
+    <!-- Tombol Cepat -->
+    <div class="quick-links">
+      <a href="https://airdrops.io" target="_blank" class="btn">Airdrops.io</a>
+      <a href="https://layer3.xyz" target="_blank" class="btn">Layer3</a>
+      <a href="https://galxe.com" target="_blank" class="btn">Galxe</a>
+      <a href="https://zealy.io" target="_blank" class="btn">Zealy</a>
+    </div>
+
+    <!-- Input Form -->
+    <div class="input-section">
+      <input type="text" id="nama" placeholder="Nama Airdrop" />
+      <input type="url" id="link" placeholder="Link Airdrop" />
+      <input type="date" id="deadline" />
+      <select id="status">
+        <option value="belum">🟡 Belum Mulai</option>
+        <option value="proses">🔵 Sedang Proses</option>
+        <option value="selesai">🟢 Selesai</option>
+      </select>
+      <button onclick="tambahAirdrop()">➕ Tambah</button>
+    </div>
+
+    <!-- Daftar Airdrop -->
+    <ul id="daftar-airdrop"></ul>
+
+    <!-- Tombol Backup -->
+    <div class="backup">
+      <button onclick="exportData()">📤 Export Data</button>
+      <input type="file" id="importFile" accept=".json" style="display:none" />
+      <button onclick="document.getElementById('importFile').click()">📥 Import Data</button>
+    </div>
+
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode">
+      <label>
+        <input type="checkbox" id="darkModeToggle"> 🌙 Dark Mode
+      </label>
+    </div>
+
+    <!-- Info -->
+    <div class="info">
+      <details>
+        <summary>💡 Tips Aman</summary>
+        <p>Simpan wallet Anda dengan aman. Jangan bagikan private key. Gunakan recovery phrase offline.</p>
+      </details>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
