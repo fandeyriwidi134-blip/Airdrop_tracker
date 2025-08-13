@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Airdrop Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 Airdrop Tracker</h1>
+    <p>Simpan dan pantau airdrop favorit Anda — tanpa modal!</p>
+
+    <div class="input-section">
+      <input type="text" id="nama" placeholder="Nama Airdrop" />
+      <input type="url" id="link" placeholder="Link Airdrop" />
+      <input type="date" id="deadline" />
+      <button onclick="tambahAirdrop()">➕ Tambah</button>
+    </div>
+
+    <ul id="daftar-airdrop"></ul>
+
+    <div class="info">
+      <details>
+        <summary>💡 Tips Aman</summary>
+        <p>Simpan wallet Anda dengan aman. Jangan bagikan private key. Gunakan recovery phrase offline.</p>
+      </details>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
