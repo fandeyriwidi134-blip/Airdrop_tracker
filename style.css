@@ -14,3 +14,204 @@ button:hover { background: #1d4ed8; }
 .hapus { color: #ef4444; cursor: pointer; font-weight: bold; }
 .info { margin-top: 30px; font-size: 14px; color: #6b7280; }
 details summary { font-weight: 600; cursor: pointer; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f7fc;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+body.dark .container {
+  background: #1f1f1f;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+body.dark input,
+body.dark select,
+body.dark li,
+body.dark .input-section {
+  background: #2d2d2d;
+  border-color: #444;
+  color: #e0e0e0;
+}
+
+body.dark .btn {
+  background: #1e40af;
+}
+
+body.dark .btn:hover {
+  background: #1e3a8a;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s;
+}
+
+h1 {
+  text-align: center;
+  color: #2563eb;
+  margin-bottom: 16px;
+}
+
+body.dark h1 {
+  color: #60a5fa;
+}
+
+p {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+/* Tombol Cepat */
+.quick-links {
+  display: flex;
+  gap: 10px;
+  margin: 16px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  padding: 8px 12px;
+  background: #3b82f6;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #2563eb;
+}
+
+/* Form Input */
+.input-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, select {
+  flex: 1;
+  min-width: 120px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+/* Daftar Airdrop */
+#daftar-airdrop {
+  list-style: none;
+}
+
+#daftar-airdrop li {
+  padding: 14px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  transition: border-left 0.3s;
+}
+
+body.dark #daftar-airdrop li {
+  background: #2d2d2d;
+  border-color: #444;
+}
+
+#daftar-airdrop a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+body.dark #daftar-airdrop a {
+  color: #60a5fa;
+}
+
+#daftar-airdrop a:hover {
+  text-decoration: underline;
+}
+
+.hapus {
+  color: #ef4444;
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+}
+
+/* Backup */
+.backup {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.backup button {
+  margin: 0 5px;
+  font-size: 14px;
+}
+
+/* Dark Mode */
+.dark-mode {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.dark-mode label {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+body.dark .dark-mode label {
+  color: #9ca3af;
+}
+
+/* Info */
+.info {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+details summary {
+  font-weight: 600;
+  cursor: pointer;
+}
